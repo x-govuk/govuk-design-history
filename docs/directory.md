@@ -11,7 +11,7 @@ description: A list of design histories managed using this project.
 
 ### Department for Education
 
-- [Becoming a teacher](https://bat-design-history.netlify.app)
+- [Becoming a teacher](https://becoming-a-teacher.design-history.education.gov.uk)
 - [Early years foundation stage framework](https://eyfs-design-history.netlify.app)
 - [Get help with remote education](https://remote-education-design-history.netlify.app)
 - [Get Into Teaching](https://get-into-teaching-design-history.netlify.app)

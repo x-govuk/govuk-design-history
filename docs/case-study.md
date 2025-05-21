@@ -8,14 +8,14 @@ related:
     - title: Related content
       items:
         - text: Becoming a teacher design history
-          href: https://bat-design-history.netlify.app/
+          href: https://becoming-a-teacher.design-history.education.gov.uk
 ---
 
 On the Becoming a teacher team, we've been using a design history to document the evolution of the Find postgraduate teacher training and Apply for teacher training services since they began in May 2018.
 
 Our design history is a public record of our designs and it tells the story of what we’ve designed and why:
 
-[https://bat-design-history.netlify.app/](https://bat-design-history.netlify.app/)
+<https://becoming-a-teacher.design-history.education.gov.uk>
 
 ## The value of documenting design
 
@@ -44,7 +44,7 @@ We started by trying to upload screenshots to Confluence, but this was cumbersom
 
 We used the GOV.UK prototype kit to make the first design history and hosted it on Heroku. The kit made it easy to create pages, and we began by making posts for each feature, showing a list of screenshots alongside descriptions of what had changed and why.
 
-With a page for each design we now had a public URL to share with the team, to put into Trello cards or pull requests. [An example of an early post](https://bat-design-history.netlify.app/find-teacher-training/private-beta/user-research-apr-12).
+With a page for each design we now had a public URL to share with the team, to put into Trello cards or pull requests. [An example of an early post](https://becoming-a-teacher.design-history.education.gov.uk/find-teacher-training/user-research-apr-12/).
 
 When it was clear these posts were useful we made creating them easier. We automated the process with scripts for taking screenshots, saving images to the right place, and generating a page with all the markup needed. Now we could focus on writing about the design rather than the task of recording it.
 
@@ -56,15 +56,15 @@ Over time we could begin to show the old and new designs, and callout specific c
 
 ## Recording milestones and more
 
-As the history grew, we used it to record more – like snapshots of the service at important milestones, such as [at the launch of a public beta](https://bat-design-history.netlify.app/find-teacher-training/live-launch) or [our first publishing tool](https://bat-design-history.netlify.app/publish-teacher-training-courses/check-ucas-data).
+As the history grew, we used it to record more – like snapshots of the service at important milestones, such as [at the launch of a public beta](https://becoming-a-teacher.design-history.education.gov.uk/find-teacher-training/live-launch/) or [our first publishing tool](https://becoming-a-teacher.design-history.education.gov.uk/publish-teacher-training-courses/check-ucas-data/).
 
 When prototyping a complex feature its logic can become hidden in code or only visible for particular user journeys. Where these rules and scenarios emerged, the design history became the natural place to describe them, and this made it easier for developers to build those features.
 
-For example, in Apply for teacher training we ask candidates for their nationality. [Our design history post describes asking for multiple nationalities](https://bat-design-history.netlify.app/apply-for-teacher-training/nationality/). It explains how candidates can record multiple nationalities, what happens when 2 or 3 are recorded, how the design works without JavaScript and how we made it accessible.
+For example, in Apply for teacher training we ask candidates for their nationality. [Our design history post describes asking for multiple nationalities](https://becoming-a-teacher.design-history.education.gov.uk/apply-for-teacher-training/nationality/). It explains how candidates can record multiple nationalities, what happens when 2 or 3 are recorded, how the design works without JavaScript and how we made it accessible.
 
 Occasionally we needed to print designs – to show in research, to put on the wall or for group sessions. A post typically shows screenshots for a complete feature or user journey, printing those screenshots would be ideal. So we added print styles, meaning that each post can be printed, one screenshot (and title) per page.
 
-We documented [the information we ask users for](http://bat-design-history.netlify.app/apply-for-teacher-training/question-protocol-for-pilot), [the emails we send users](https://bat-design-history.netlify.app/publish-teacher-training-courses/email-new-cycle) and [the processes our team followed](https://bat-design-history.netlify.app/publish-teacher-training-courses/what-we-did-for-rollover).
+We documented [the information we ask users for](https://becoming-a-teacher.design-history.education.gov.uk/apply-for-teacher-training/question-protocol-for-pilot/), [the emails we send users](https://becoming-a-teacher.design-history.education.gov.uk/publish-teacher-training-courses/email-new-cycle/) and [the processes our team followed](https://becoming-a-teacher.design-history.education.gov.uk/publish-teacher-training-courses/what-we-did-for-rollover/).
 
 ## Making contributions easier
 
