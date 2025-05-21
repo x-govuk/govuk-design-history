@@ -1,39 +1,43 @@
 import process from 'node:process'
 
-import govukEleventyPlugin from '@x-govuk/govuk-eleventy-plugin'
+import { govukEleventyPlugin } from '@x-govuk/govuk-eleventy-plugin'
+
+const serviceName = 'GOV.UK Design History'
 
 export default function (eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(govukEleventyPlugin, {
-    brandColour: '#28a',
-    fontFamily: 'system-ui, sans-serif',
     icons: {
-      mask: 'https://raw.githubusercontent.com/x-govuk/logo/main/images/x-govuk-mask-icon.svg?raw=true',
+      mask: 'https://raw.githubusercontent.com/x-govuk/logo/main/images/x-govuk-icon-mask.svg?raw=true',
       shortcut:
-        'https://raw.githubusercontent.com/x-govuk/logo/main/images/x-govuk-favicon.ico',
+        'https://raw.githubusercontent.com/x-govuk/logo/main/images/favicon.ico',
       touch:
-        'https://raw.githubusercontent.com/x-govuk/logo/main/images/x-govuk-apple-touch-icon.png'
+        'https://raw.githubusercontent.com/x-govuk/logo/main/images/x-govuk-icon-180.png'
     },
     opengraphImageUrl:
       'https://x-govuk.github.io/govuk-design-history-docs/assets/opengraph-image.png',
-    homeKey: 'GOV.UK Design History',
-    titleSuffix: 'GOV.UK Design History',
-    parentSite: {
-      url: 'https://x-govuk.github.io/#projects',
-      name: 'X-GOVUK projects'
-    },
+    themeColor: '#2288aa',
+    titleSuffix: serviceName,
+    homeKey: serviceName,
+    showBreadcrumbs: false,
+    headingPermalinks: true,
     url:
       process.env.GITHUB_ACTIONS &&
       'https://x-govuk.github.io/govuk-design-history/',
+    stylesheets: ['/assets/application.css'],
     header: {
-      logotype: 'x-govuk',
-      productName: 'Design History',
+      homepageUrl: 'https://x-govuk.github.io'
+    },
+    serviceNavigation: {
+      serviceName,
+      serviceUrl: process.env.GITHUB_ACTIONS
+        ? '/govuk-prototype-components/'
+        : '/',
       search: {
         indexPath: '/search.json',
         sitemapPath: '/sitemap'
       }
     },
-    headingPermalinks: true,
     footer: {
       copyright: {
         text: '© X-GOVUK'
@@ -41,7 +45,8 @@ export default function (eleventyConfig) {
       contentLicence: {
         html: 'Licensed under the <a class="govuk-footer__link" href="https://github.com/x-govuk/govuk-design-history-docs/blob/main/LICENSE.txt">MIT Licence</a>, except where otherwise stated'
       }
-    }
+    },
+    rebrand: true
   })
 
   // Collections
@@ -58,14 +63,16 @@ export default function (eleventyConfig) {
   // Pass through
   eleventyConfig.addPassthroughCopy('./docs/assets')
 
+  // Enable X-GOVUK brand
+  eleventyConfig.addNunjucksGlobal('xGovuk', true)
+
   // Config
   return {
     dataTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
     markdownTemplateEngine: 'njk',
     dir: {
-      input: 'docs',
-      layouts: '../node_modules/@x-govuk/govuk-eleventy-plugin/layouts'
+      input: 'docs'
     },
     pathPrefix: process.env.GITHUB_ACTIONS && '/govuk-design-history/'
   }

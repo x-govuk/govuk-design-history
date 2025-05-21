@@ -39,8 +39,8 @@
   <path fill="#A5A9AB" fill-rule="nonzero" d="M80 486v.1a8 8 0 0 0 8 7.9h440a7.9 7.9 0 0 0 7.9-8 8.5 8.5 0 0 1-5.5 2H86c-2.1 0-4.2-.7-5.9-2Z"/>
   <path fill="#000" fill-opacity=".5" fill-rule="nonzero" d="M105 496h406l20 4H85z"/>
   <path fill="#505A5F" fill-rule="nonzero" d="m107.4 494 5.7 3h38.6l5.7-3zm352 0 5.7 3h38.6l5.7-3z"/>
-  <path fill="#FFF" fill-rule="nonzero" stroke="#0B0C0C" stroke-width="2" d="M179 280h258v148H179z"/>
-  <path fill="#0B0C0C" fill-rule="nonzero" d="M179 280h258v28H179z"/>
+  <path fill="#FFF" fill-rule="nonzero" stroke="#1D70B8" stroke-width="2" d="M179 280h258v148H179z"/>
+  <path fill="#1D70B8" fill-rule="nonzero" d="M179 280h258v28H179z"/>
   <path fill="#B1B4B6" fill-rule="nonzero" d="M196 322h82v9h-82v-9Zm0 18h166v9H196v-9Zm0 18h150v9H196v-9Zm0 18h166v9H196v-9Zm0 18h160v9H196v-9Zm0 18h166v9H196v-9Z"/>
   <text fill="#FFF" font-family="system-ui, sans-serif" font-size="16" transform="translate(180 280)">
     <tspan x="16" y="20">Design history</tspan>
