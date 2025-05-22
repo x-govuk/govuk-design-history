@@ -31,7 +31,7 @@ export default function (eleventyConfig) {
     serviceNavigation: {
       serviceName,
       serviceUrl: process.env.GITHUB_ACTIONS
-        ? '/govuk-prototype-components/'
+        ? '/govuk-design-history/'
         : '/',
       search: {
         indexPath: '/search.json',
