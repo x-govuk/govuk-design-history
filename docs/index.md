@@ -7,6 +7,7 @@ description: Document and share design decisions. Create a permanent record of h
 image:
   src: /assets/homepage-illustration.svg
   alt: Eleventy’s possum mascot hanging on a red balloon and floating above a laptop.
+  hideOnMobile: true
 startButton:
   href: /get-started
 ---
