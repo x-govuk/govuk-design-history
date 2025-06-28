@@ -80,7 +80,6 @@ You can also change the copyright statement and content licence. See [footer opt
 You’re now ready to start documenting your designs. To add a new post:
 
 1. Create a new file in the app/posts folder. Files should be named using the format `YYYY-MM-DD-slug.md`, where:
-
    - `YYYY` is the year
    - `MM` is the month
    - `DD` is the day
