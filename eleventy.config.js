@@ -30,9 +30,7 @@ export default function (eleventyConfig) {
     },
     serviceNavigation: {
       serviceName,
-      serviceUrl: process.env.GITHUB_ACTIONS
-        ? '/govuk-design-history/'
-        : '/',
+      serviceUrl: process.env.GITHUB_ACTIONS ? '/govuk-design-history/' : '/',
       search: {
         indexPath: '/search.json',
         sitemapPath: '/sitemap'
@@ -45,8 +43,7 @@ export default function (eleventyConfig) {
       contentLicence: {
         html: 'Licensed under the <a class="govuk-footer__link" href="https://github.com/x-govuk/govuk-design-history-docs/blob/main/LICENSE.txt">MIT Licence</a>, except where otherwise stated'
       }
-    },
-    rebrand: true
+    }
   })
 
   // Collections
