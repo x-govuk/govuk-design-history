@@ -12,7 +12,6 @@ The first allows you to capture these screenshots from a sequence of URLs, perha
 ## Generate a post with screenshots taken from a sequence of URLs
 
 1. Open `scripts/screenshot.js`. In this file you will see 2 values:
-
    - `domain`: the website you want to screenshot, eg localhost:3000
    - `paths`: an array of named paths
 
@@ -25,7 +24,6 @@ The first allows you to capture these screenshots from a sequence of URLs, perha
    ```
 
    This will:
-
    - visit each page lists in paths and save a screenshot
    - save those screenshots in the named directory
    - generate an index page with screenshots listed in order
@@ -53,7 +51,7 @@ running `node scripts/screenshot.js submit-personal-details` will generate the f
 
 A post will also be created, using the name of the directory and current date, for example:
 
-- `app/posts/{{ "now" | date("y-LL-dd") }}-submit-personal-details.md`
+- `app/posts/2025-06-28-submit-personal-details.md`
 
 ## Generate a page of screenshots from a folder of images
 
@@ -76,7 +74,7 @@ This file will be pre-populated with a title, date, and a list of screenshots:
 ```yaml
 ---
 title: Submit personal details
-date: {{ "now" | date("y-LL-dd") }}
+date: 2025-06-28
 screenshots:
   items:
     - "Index page"
@@ -90,7 +88,7 @@ If you want to change the title of any image, add a caption, or set more detaile
 
 ```yaml
 title: Submit personal details
-date: {{ "now" | date("y-LL-dd") }}
+date: 2025-06-28
 screenshots:
   items:
     - text: "Index page"
