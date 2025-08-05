@@ -15,7 +15,7 @@ export default function (eleventyConfig) {
         'https://raw.githubusercontent.com/x-govuk/logo/main/images/x-govuk-icon-180.png'
     },
     opengraphImageUrl:
-      'https://x-govuk.github.io/govuk-design-history-docs/assets/opengraph-image.png',
+      'https://x-govuk.github.io/govuk-design-history/assets/opengraph-image.png',
     themeColor: '#2288aa',
     titleSuffix: serviceName,
     homeKey: serviceName,
@@ -41,7 +41,7 @@ export default function (eleventyConfig) {
         text: '© X-GOVUK'
       },
       contentLicence: {
-        html: 'Licensed under the <a class="govuk-footer__link" href="https://github.com/x-govuk/govuk-design-history-docs/blob/main/LICENSE.txt">MIT Licence</a>, except where otherwise stated'
+        html: 'Licensed under the <a class="govuk-footer__link" href="https://github.com/x-govuk/govuk-design-history/blob/main/LICENSE.txt">MIT Licence</a>, except where otherwise stated'
       }
     }
   })
