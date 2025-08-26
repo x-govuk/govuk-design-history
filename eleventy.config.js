@@ -7,6 +7,19 @@ const serviceName = 'GOV.UK Design History'
 export default function (eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(govukEleventyPlugin, {
+    footer: {
+      copyright: {
+        text: '© X-GOVUK'
+      },
+      contentLicence: {
+        html: 'Licensed under the <a class="govuk-footer__link" href="https://github.com/x-govuk/govuk-design-history/blob/main/LICENSE.txt">MIT Licence</a>, except where otherwise stated'
+      }
+    },
+    header: {
+      homepageUrl: 'https://x-govuk.github.io'
+    },
+    headingPermalinks: true,
+    homeKey: serviceName,
     icons: {
       mask: 'https://raw.githubusercontent.com/x-govuk/logo/main/images/x-govuk-icon-mask.svg?raw=true',
       shortcut:
@@ -16,18 +29,6 @@ export default function (eleventyConfig) {
     },
     opengraphImageUrl:
       'https://x-govuk.github.io/govuk-design-history/assets/opengraph-image.png',
-    themeColor: '#2288aa',
-    titleSuffix: serviceName,
-    homeKey: serviceName,
-    showBreadcrumbs: false,
-    headingPermalinks: true,
-    url:
-      process.env.GITHUB_ACTIONS &&
-      'https://x-govuk.github.io/govuk-design-history/',
-    stylesheets: ['/assets/application.css'],
-    header: {
-      homepageUrl: 'https://x-govuk.github.io'
-    },
     serviceNavigation: {
       serviceName,
       serviceUrl: process.env.GITHUB_ACTIONS ? '/govuk-design-history/' : '/',
@@ -36,14 +37,13 @@ export default function (eleventyConfig) {
         sitemapPath: '/sitemap'
       }
     },
-    footer: {
-      copyright: {
-        text: '© X-GOVUK'
-      },
-      contentLicence: {
-        html: 'Licensed under the <a class="govuk-footer__link" href="https://github.com/x-govuk/govuk-design-history/blob/main/LICENSE.txt">MIT Licence</a>, except where otherwise stated'
-      }
-    }
+    showBreadcrumbs: false,
+    stylesheets: ['/assets/application.css'],
+    themeColor: '#2288aa',
+    titleSuffix: serviceName,
+    url:
+      process.env.GITHUB_ACTIONS &&
+      'https://x-govuk.github.io/govuk-design-history/'
   })
 
   // Collections
