@@ -2,7 +2,7 @@
   "name": "govuk-design-history",
   "version": "1.0.0",
   "description": "A design history for your GOV.UK service",
-  "homepage": "https://x-govuk.org/govuk-design-history",
+  "homepage": "https://govuk-design-history.x-govuk.org",
   "bugs": {
     "url": "https://github.com/x-govuk/govuk-design-history/issues"
   },

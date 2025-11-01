@@ -1,5 +1,3 @@
-import process from 'node:process'
-
 import { govukEleventyPlugin } from '@x-govuk/govuk-eleventy-plugin'
 
 const serviceName = 'GOV.UK Design History'
@@ -28,10 +26,10 @@ export default function (eleventyConfig) {
         'https://raw.githubusercontent.com/x-govuk/logo/main/images/x-govuk-icon-180.png'
     },
     opengraphImageUrl:
-      'https://x-govuk.org/govuk-design-history/assets/opengraph-image.png',
+      'https://govuk-design-history.x-govuk.org/assets/opengraph-image.png',
     serviceNavigation: {
       serviceName,
-      serviceUrl: process.env.GITHUB_ACTIONS ? '/govuk-design-history/' : '/',
+      serviceUrl: '/',
       search: {
         indexPath: '/search-index.json',
         sitemapPath: '/sitemap'
@@ -43,9 +41,7 @@ export default function (eleventyConfig) {
       searchIndex: true
     },
     themeColor: '#2288aa',
-    titleSuffix: serviceName,
-    url:
-      process.env.GITHUB_ACTIONS && 'https://x-govuk.org/govuk-design-history/'
+    titleSuffix: serviceName
   })
 
   // Collections
@@ -72,7 +68,6 @@ export default function (eleventyConfig) {
     markdownTemplateEngine: 'njk',
     dir: {
       input: 'docs'
-    },
-    pathPrefix: process.env.GITHUB_ACTIONS && '/govuk-design-history/'
+    }
   }
 }
