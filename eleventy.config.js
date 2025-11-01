@@ -16,7 +16,7 @@ export default function (eleventyConfig) {
       }
     },
     header: {
-      homepageUrl: 'https://x-govuk.github.io'
+      homepageUrl: 'https://x-govuk.org'
     },
     headingPermalinks: true,
     homeKey: serviceName,
@@ -28,7 +28,7 @@ export default function (eleventyConfig) {
         'https://raw.githubusercontent.com/x-govuk/logo/main/images/x-govuk-icon-180.png'
     },
     opengraphImageUrl:
-      'https://x-govuk.github.io/govuk-design-history/assets/opengraph-image.png',
+      'https://x-govuk.org/govuk-design-history/assets/opengraph-image.png',
     serviceNavigation: {
       serviceName,
       serviceUrl: process.env.GITHUB_ACTIONS ? '/govuk-design-history/' : '/',
@@ -45,8 +45,7 @@ export default function (eleventyConfig) {
     themeColor: '#2288aa',
     titleSuffix: serviceName,
     url:
-      process.env.GITHUB_ACTIONS &&
-      'https://x-govuk.github.io/govuk-design-history/'
+      process.env.GITHUB_ACTIONS && 'https://x-govuk.org/govuk-design-history/'
   })
 
   // Collections

@@ -58,7 +58,7 @@ Before adding posts, you’ll probably want to customise a few things for the si
 1. Open the file `eleventy.config.js`
 2. Within the options for `@x-govuk/govuk-eleventy-plugin`, change the value for `productName` to the name you want to use. This name will appear in the header.
 
-You can also change the organisation name and logo, as well as other aspects of the header. See [header options](https://x-govuk.github.io/govuk-eleventy-plugin/options/#options-for-header) in the documentation for the `@x-govuk/govuk-eleventy-plugin`.
+You can also change the organisation name and logo, as well as other aspects of the header. See [header options](https://x-govuk.org/govuk-eleventy-plugin/options/#options-for-header) in the documentation for the `@x-govuk/govuk-eleventy-plugin`.
 
 ### Update the homepage
 
@@ -73,7 +73,7 @@ If you want to link to other tools your team uses, you can place these in the fo
 1. Open the file `eleventy.config..js`
 2. Within the options for `@x-govuk/govuk-eleventy-plugin`, add values for the `footer` option. This option takes the same values as those for the [footer component](https://design-system.service.gov.uk/components/footer/), allowing you to add navigation sections and links.
 
-You can also change the copyright statement and content licence. See [footer options](https://x-govuk.github.io/govuk-eleventy-plugin/options/#options-for-footer) in the documentation for the `@x-govuk/govuk-eleventy-plugin`.
+You can also change the copyright statement and content licence. See [footer options](https://x-govuk.org/govuk-eleventy-plugin/options/#options-for-footer) in the documentation for the `@x-govuk/govuk-eleventy-plugin`.
 
 ## Document
 
