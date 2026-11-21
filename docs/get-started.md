@@ -58,7 +58,7 @@ Before adding posts, you’ll probably want to customise a few things for the si
 1. Open the file `eleventy.config.js`
 2. Within the options for `@x-govuk/govuk-eleventy-plugin`, change the value for `productName` to the name you want to use. This name will appear in the header.
 
-You can also change the organisation name and logo, as well as other aspects of the header. See [header options](https://x-govuk.org/govuk-eleventy-plugin/options/#options-for-header) in the documentation for the `@x-govuk/govuk-eleventy-plugin`.
+You can also change the organisation name and logo, as well as other aspects of the header. See [header options](https://govuk-eleventy-plugin.x-govuk.org/get-started/options/) in the documentation for the `@x-govuk/govuk-eleventy-plugin`.
 
 ### Update the homepage
 
