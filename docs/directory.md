@@ -19,16 +19,10 @@ description: A list of design histories managed using this project.
 - [Early years foundation stage framework](https://eyfs-design-history.netlify.app)
 - [Get help with remote education](https://remote-education-design-history.netlify.app)
 - [Teacher CPD](https://teacher-cpd.design-history.education.gov.uk)
-- [TRA Digital](https://tra-digital-design-history.herokuapp.com)
 
 ### Department for Environment, Food & Rural Affairs
 
 - [Air quality design history](https://defra-design.github.io/aqie-design-history/)
-- [Defra Forms](https://defra-forms-design-history-18deac2f53ea.herokuapp.com)
-
-### Department for Levelling Up, Housing & Communities
-
-- [Submit data on social housing sales and lettings (aka CORE)](https://core-design-history.herokuapp.com)
 
 ### HMRC
 
