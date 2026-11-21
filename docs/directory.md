@@ -2,7 +2,7 @@
 layout: sub-navigation
 order: 6
 title: Directory
-description: A list of design histories managed using this project.
+description: A list of design histories across the public sector.
 ---
 
 ### Crown Commercial Service
@@ -20,11 +20,17 @@ description: A list of design histories managed using this project.
 ### Department for Education
 
 - [Becoming a teacher](https://becoming-a-teacher.design-history.education.gov.uk)
+- [Claim additional payments](https://design-histories.education.gov.uk/team/claims)
+- [DesignOps](https://design-histories.education.gov.uk/team/design-ops)
 - [Early years foundation stage framework](https://eyfs-design-history.netlify.app)
-- [Get help with remote education](https://remote-education-design-history.netlify.app)
+- [Funding Service Delivery](https://design-histories.education.gov.uk/team/esfa-funding-service-delivery)
 - [Plan for technology in your school](https://sts-digital-strategy-design-history.netlify.app/)
-- [SDD services](https://sdd-design-history.netlify.app/)
-- [Teacher CPD](https://teacher-cpd.design-history.education.gov.uk)
+- [Service Delivery Division services](https://sdd-design-history.netlify.app/)
+- [Supporting children and families](https://design-histories.education.gov.uk/team/children-and-families)
+- [Teacher continuing professional development](https://teacher-cpd.design-history.education.gov.uk)
+- [Teacher Recruitment](https://design-histories.education.gov.uk/team/teacher-recruitment)
+- [Teaching Regulation Agency](https://design-histories.education.gov.uk/team/tra)
+- [Teaching Vacancies](https://tv-design-history.herokuapp.com/)
 
 ### Department for Environment, Food & Rural Affairs
 
@@ -43,6 +49,15 @@ description: A list of design histories managed using this project.
 ### Ministry of Justice
 
 - [Consider a Recall](https://makerecalldecisions-design-history-main.apps.live.cloud-platform.service.justice.gov.uk/)
+- [Manage prison offender manager cases](https://manage-pom-cases-design-history.apps.live.cloud-platform.service.justice.gov.uk/)
+- [Prepare a case for sentence](https://pacfs-design-history.apps.live.cloud-platform.service.justice.gov.uk/)
+- [Welcome people into prison](https://hmpps-rap-design-history.apps.live.cloud-platform.service.justice.gov.uk/)
+
+### NHS
+
+- [Ask the NHS](https://nhs-duec.github.io/intent-capture-design-history/)
+- [Digital prevention services](https://design-history.prevention-services.nhs.uk/)
+- [NHS App](https://design-history.nhsapp.service.nhs.uk/)
 
 ### Ofqual
 
