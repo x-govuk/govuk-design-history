@@ -105,7 +105,7 @@ You’re now ready to start documenting your designs. To add a new post:
 
 ## Launch
 
-[Make things open, it makes them better](https://www.gov.uk/guidance/government-design-principles#make-things-open-it-makes-things-better). You can do this by deploying (or uploading) your design history to a third-party host. This project includes support for 2 different services, Heroku and Netlify.
+[Make things open, it makes them better](https://www.gov.uk/guidance/government-design-principles#make-things-open-it-makes-things-better). You can do this by deploying (or uploading) your design history to a third-party host. This project includes support for 3 different services: Heroku, Netlify and GitHub Pages.
 
 ### Heroku
 
@@ -124,3 +124,40 @@ From the Settings page, add 2 items with the keys `NODE_HTTP_SERVER_USERNAME` an
 ### Netlify
 
 Follow this [guide on deploying websites to Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/). When asked for a build command, use `npm run build`.
+
+### GitHub Pages
+
+GitHub Pages is a good option if you can't use Heroku or Netlify. 
+
+Follow this [guide on publishing your pages with a custom GitHub Actions workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow), which will use the `/.github/workflows/deploy.yml` file to build and deploy the design history. 
+
+You will need to make changes to `eleventy.config.js`, and you'll need the URL for your GitHub Pages site to make these changes. Follow the [guide to view your published site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#viewing-your-published-site) to confirm the URL for your GitHub Pages site. 
+
+Usually the URL will be based on your organisation name or user name and the name of the respository. For example:
+
+- `https://<user>.github.io/<repository>/`
+- `https://<organisation>.github.io/<repository>/`
+
+1. Open the file `eleventy.config.js`.
+2. Within the options for `@x-govuk/govuk-eleventy-plugin`, change the `url` value from
+  ```js
+  url:
+    process.env.GITHUB_ACTIONS &&
+    'https://x-govuk.github.io/govuk-design-history-template/'
+  ```
+  to 
+  ```js
+  url:
+    process.env.GITHUB_ACTIONS &&
+    'https://<your-user-or-organisation>.github.io/<your-repository>/'
+  ```
+3. Within the config for `@x-govuk/govuk-eleventy-plugin`, change the `pathPrefix` value from
+  ```js
+  url:
+    pathPrefix: process.env.GITHUB_ACTIONS && '/govuk-design-history-template/'
+  ```
+  to
+  ```js
+  url:
+    pathPrefix: process.env.GITHUB_ACTIONS && '/<your-repository>/'
+  ```
