@@ -2,8 +2,8 @@
 homepage: true
 layout: product
 includeInBreadcrumbs: true
-title: A design history for your GOV.UK service
-description: Document and share design decisions. Create a permanent record of how your service has developed over time.
+title: A design history for your service
+description: Document and share design decisions for your GOV.UK or NHS service. Create a permanent record of how your service has developed over time.
 image:
   src: /assets/homepage-illustration.svg
   alt: Eleventy’s possum mascot hanging on a red balloon and floating above a laptop.
@@ -24,7 +24,11 @@ startButton:
   <section class="govuk-grid-column-full">
     <hr class="govuk-section-break govuk-section-break--visible govuk-section-break--xl govuk-!-margin-top-0">
     <h2 class="govuk-heading-m">Contribute</h2>
-    <p class="govuk-body">The project repository is public and we welcome contributions from anyone.</p>
-    <p class="govuk-body"><a class="govuk-link govuk-link--no-visited-state" href="https://github.com/x-govuk/govuk-design-history-template">View this project on GitHub</a></p>
+    <p class="govuk-body">The project repositories are public and we welcome contributions from anyone.</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a class="govuk-link" href="https://github.com/x-govuk/govuk-design-history-template">GOV.UK design history template</a></li>
+      <li><a class="govuk-link" href="https://github.com/x-govuk/nhsuk-design-history-template">NHS.UK design history template</a></li>
+      <li><a class="govuk-link" href="https://github.com/x-govuk/govuk-design-history">Design histories guidance</a></li>
+    </ul>
   </section>
 </div>
