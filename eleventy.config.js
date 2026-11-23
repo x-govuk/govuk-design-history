@@ -2,7 +2,7 @@ import fs from 'node:fs/promises'
 
 import { govukEleventyPlugin } from '@x-govuk/govuk-eleventy-plugin'
 
-const serviceName = 'GOV.UK Design History'
+const serviceName = 'Design histories'
 
 export default function (eleventyConfig) {
   // Plugins
